@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css" />
+  </head>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="modal fade" id="newslatter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" id="modeal-position">
+            <div class="modal-content">
+                <!--<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>-->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-3">
+                            <div class="row">
+                                <img src="./img/newsletter.png" alt="Smiley face" class="newsletter-image">    
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9">
+                            <div class="row">   
+                                <h1 class="news-header">Sign Up and save up to 50%</h1>
+                            </div>
+                            <div class="row">
+                                <p class="news-peragraph">SignUp for newslatter get access to exclusive member deals, travel tips, Vip rewards.</p>
+                            </div>
+                            <div class="row">
+                                <form>
+                                    <fieldset>
+                                        
+                                        <input type="email" placeholder="Email" id="news-latter-email">
+                                        <input type="button" value="Give me some offers" id="submit-new-latter">
+                                       
+                                    </fieldset>   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //$("#flash-message-desktop").slideDown("slow");
+        $("#newslatter").modal('show');
+        });
+</script>
+</body>
+</html>
