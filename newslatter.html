@@ -6,6 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel = "stylesheet" type = "text/css" href = "./css/style.css" />
+    <style>
+        
+        .box {
+            width:70%;
+            height:200px;
+            background:#FFF;
+            margin:40px auto;
+        }
+        
+        /*==================================================
+         * Effect 2
+         * ===============================================*/
+        .effect2
+        {
+          position: relative;
+        }
+        .effect2:before, .effect2:after
+        {
+          z-index: -1;
+          position: absolute;
+          content: "";
+          bottom: 15px;
+          left: 10px;
+          width: 50%;
+          top: 80%;
+          max-width:300px;
+          background: #777;
+          box-shadow: 0 15px 10px #777;
+          transform: rotate(-3deg);
+        }
+        .effect2:after
+        {
+          transform: rotate(3deg);
+          right: 10px;
+          left: auto;
+        }
+            </style>
   </head>
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,6 +53,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
     <div class="modal fade" id="newslatter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,6 +93,7 @@
                 </div>
             </div>
         </div>
+        <!-- <div class ="box effect2" > <h3> Effect 2 </h3 > </div > -->
     </div>
     <script type="text/javascript">
         $(document).ready(function(){
